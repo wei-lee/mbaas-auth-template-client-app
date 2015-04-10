@@ -13,25 +13,41 @@
   <header class="header-footer-bg">
       <div class="center">
           <h3>FeedHenry
-              <small>QuickStart - HTML5</small>
+              <small>Auth Example</small>
           </h3>
       </div>
   </header>
 
-  <div id="count" class="">
+  <div id="login_page" class="pages">
       <div id="formWrapper">
-          <p id="description">This is a basic Javascript App that can take in your name, send it to a cloud app and display the response.</p>
+          <p id="description"></p>
           <br>
 
           <div class="input-div">
-              <input id="hello_to" type="text" class="input-text" placeholder="Enter Your Name Here."/>
+              <input id="username_field" type="text" class="input-text" placeholder="Enter User Name"/>
+          </div>
+
+          <div class="input-div">
+              <input id="password_field" type="password" class="input-text" placeholder="Enter Password"/>
           </div>
 
           <br>
 
-          <button id="say_hello" type="button" class="say-hello-button">Say Hello From The Cloud</button>
+          <button id="login_btn" type="button" class="say-hello-button">Login</button>
           <div id="cloudResponse" class="cloudResponse"></div>
       </div>
+  </div>
+
+  <div id="test_page" class="pages hidden">
+    <div id="formWrapper">
+      <p id="test_description"></p>
+      <br>
+
+      <button id="hello_btn" type="button" class="say-hello-button">Call Secure Endpoint</button>
+      <button id="logout_btn" type="button" class="say-hello-button">Logout</button>
+
+      <div id="secureCloudResponse" class="cloudResponse"></div>
+    </div>
   </div>
 
       <footer class="header-footer-bg">
@@ -42,7 +58,8 @@
           </div>
       </footer>
 
+    <script src="jquery.js"></script>
     <script src="feedhenry.js"></script>
-    <script src="hello.js"></script>
+    <script src="auth.js"></script>
   </body>
 </html>

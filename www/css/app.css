@@ -19,7 +19,7 @@ body {
     width: inherit;
     height: inherit;
 }
-#count {
+.pages {
     margin-top:50px;
 }
 header {
@@ -72,7 +72,7 @@ footer > div > small {
  *  CUSTOM STYLING
  */
 
-#description {
+#description, #test_description {
     text-align: justify;
     position: relative;
     padding-top: 40px;
@@ -114,4 +114,8 @@ footer > div > small {
     width: 100%;
 
     padding: 5px 0px 5px 0px;
+}
+
+.hidden {
+    display: none;
 }
